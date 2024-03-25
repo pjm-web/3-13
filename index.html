@@ -44,6 +44,8 @@
 			display:flex; 
 			justify-content: space-between;}
 		.logo{line-height: 40px; color: White;}
+		li{list-style-type: none;}
+		a {text-decoration: none; color: inherit;}
 
 		header{padding-top: 200px;}
 		header{background: #212124; padding-top: 120px; padding-bottom: 120px; color: white; line-height: 1.3;}
@@ -63,7 +65,9 @@
 		.right-spacing{padding-right: 250px;}
 		.center-spacing{padding-left: 100px; padding-right:100px; text-align: center;}
 		.center-spacing2{padding-left: 100px; padding-right:100px; text-align: center;}
-		.chatleft-spacing{background: #ff6e1d; display: inline-block; color: white; padding: 25px; border-radius: 30px; margin-top: 15px; margin-bottom: 15px; margin-left: 50%; text-align: right;}
+		.chatleft-spacing{background: #ff6e1d; display: inline-block; color: white; padding: 25px; border-radius: 30px; margin-top: 15px; margin-bottom: 15px; text-align: right; direction: rtl;
+    float: right;}
+    	.clear {clear: both;}
 		.chatright-spacing{background: #2b2e33; display: inline-block; color: white; padding: 25px; border-radius: 30px; margin-top: 15px; margin-bottom: 15px; margin-right: 50%}
 		.highlight {color: #00a05a; }
 		.highlight-b {font-family: 'Pretendard-Black'; font-weight:900;}
@@ -87,6 +91,7 @@
 		.chachol{background: #212124; color: white;}
 		.orange{background: #fff0ac; border-radius: 20px; opacity: 80%;}
 		.highlight-5 {font-family: 'Pretendard-Bold'; font-weight:700; font-size: 1.2rem; padding-bottom: 10px; color: #00a05a;}
+		.shadow {box-shadow: 3px 3px 5px rgba(0, 0, 0, 0.3);
 	</style>
 </head>
 
@@ -126,15 +131,21 @@
 			<p class="left-spacing">대학생이 되고 난 뒤 조금이라도 합리적인 소비를 하고자<br> 당근 마켓, 번개장터, 중고나라 등 중고 거래 앱을 많이 애용하게 되었습니다.<br> 그러다 보니 어느덧 중고 거래만 횟수로 50회가 넘어가고,<br> 활동 배지가 15개, 거래 후기도 10개가 되어가네요.</p>
 			<p class="left-spacing highlight-c">최근에도 역시 중고 거래 앱에서 물건 몇 가지를 구매했는데요.</p>
 				<div class="flex center-spacing">
-					<div class="white";>
-						<h2>눈사람 오르골</h2>
-						<p><span class="strike">￦39,800</span> → <span class="highlight-o">￦10,000</span></p>
-						<img src="2-picture.jpg">
+					<div class="white shadow";>
+						<li>
+							<a href="#snow">
+								<h2>눈사람 오르골</h2>
+								<p><span class="strike">￦39,800</span> → <span class="highlight-o">￦10,000</span></p>
+								<img src="2-picture.jpg">
+							</a>
+						</li>
 					</div>
-					<div class="white";>
-						<h2>보다나 봉고데기</h2>
-						<p><span class="strike">￦100,000</span> → <span class="highlight-o">￦40,000</span></p>
-						<img src="3-picture.jpg">
+					<div class="white shadow";>
+						<a href="#bodana">
+							<h2>보다나 봉고데기</h2>
+							<p><span class="strike">￦100,000</span> → <span class="highlight-o">￦40,000</span></p>
+							<img src="3-picture.jpg">
+						</a>
 					</div>
 				</div>
 		</div>
@@ -166,6 +177,7 @@
 			<br>
 			<p class="chatleft-spacing">넵 알겠습니다 내일 뵐게요</p>
 		</div>
+		<div class="clear"></div>
 	</section>
 
 	<section class="section4">
@@ -192,9 +204,10 @@
 		<div class="wrap">
 			<p class="chatleft-spacing">직거래로 구매할 수 있을까요? 언제 시간 가능하실까요?</p>
 			<p class="chatright-spacing">8시쯤 괜찮으신가요?</p>
-			<p class="chatleft-spacing">네네 가능해요! 라라브레드 앞으로 가면될까요?</p>
-			<p class="chatright-spacing">넵</p>
-		</div>	
+			<br>
+			<p class="chatleft-spacing">네네 가능해요! 라라브레드 앞으로 갈게요</p>
+		</div>
+		<div class="clear"></div>
 	</section>
 	<section class="section2">
 		<div class="wrap">
@@ -207,7 +220,9 @@
 			<p class="chatright-spacing">몇시쯤 원하세요??</p>
 			<p class="chatleft-spacing">전 판매자분 되는 시간에서 빠를수록 좋습니다..!</p>
 			<p class="chatright-spacing">7시 20분 어떠세요??</p>
+			<br>
 			<p class="chatleft-spacing">네 괜찮습니다 감사해요</p>
+			<div class="clear"></div>
 		</div>
 	</section>
 	<section class="section6";>
